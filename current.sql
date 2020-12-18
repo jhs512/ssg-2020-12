@@ -29,12 +29,13 @@ CREATE TABLE `article` (
   `memberId` int(10) unsigned NOT NULL,
   `boardId` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `article` */
 
 insert  into `article`(`id`,`regDate`,`updateDate`,`title`,`body`,`memberId`,`boardId`) values 
-(1,'2020-12-17 12:55:38','2020-12-17 12:55:38','1강, SQL SELECT','# SELECT\r\n- 데이터 조회 기능\r\n\r\n# SELECT 예시\r\n```\r\nSELECT `column_name`,\r\nFROM `table_name`\r\nWHERE `column_name` > 1 # 조건\r\n```',1,3);
+(1,'2020-12-17 12:55:38','2020-12-17 12:55:38','1강, SQL SELECT','# SELECT\r\n- 데이터 조회 기능\r\n\r\n# SELECT 예시\r\n```\r\nSELECT `column_name`,\r\nFROM `table_name`\r\nWHERE `column_name` > 1 # 조건\r\n```',1,3),
+(2,'2020-12-18 09:25:55','2020-12-18 09:25:55','2강, SQL INSERT','# INSERT\r\n- 데이터 삽입 기능\r\n\r\n# INSERT 예시\r\n```\r\nINSERT INTO `table_name`\r\nSET `column1_name` = \'value1\',\r\n`column2_name` = \'value2\'\r\n```',0,0);
 
 /*Table structure for table `board` */
 
@@ -52,10 +53,7 @@ CREATE TABLE `board` (
 /*Data for the table `board` */
 
 insert  into `board`(`id`,`regDate`,`updateDate`,`name`,`code`) values 
-(1,'2020-12-17 12:52:58','2020-12-17 12:52:58','공지사항','notice'),
-(2,'2020-12-17 12:52:58','2020-12-17 12:52:58','자유','free'),
-(3,'2020-12-17 12:52:58','2020-12-17 12:52:58','SQL','it'),
-(4,'2020-12-17 12:54:01','2020-12-17 12:54:01','SQL','it');
+(3,'2020-12-17 12:52:58','2020-12-17 12:52:58','SQL','it');
 
 /*Table structure for table `member` */
 
