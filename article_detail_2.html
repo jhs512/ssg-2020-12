@@ -17,6 +17,9 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
 <meta name="google-site-verification" content="kBMgTjO9loCuIJUFRTfJvTKiT6ojjWL_x_lpxGtM-6c" />
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="body-content min-height-100vh flex flex-column">
@@ -123,7 +126,8 @@
 				<div class="article-detail__writer">장희성</div>
 			</div>
 
-			<div class="article-detail__body main-font"># INSERT
+			<script type="text/x-template">
+# INSERT
 - 데이터 삽입 기능
 
 # INSERT 예시
@@ -131,7 +135,9 @@
 INSERT INTO `table_name`
 SET `column1_name` = 'value1',
 `column2_name` = 'value2'
-```</div>
+```
+			</script>
+			<div class="article-detail__body main-font toast-ui-viewer"></div>
 
 			<div class="article-detail__reply-box">
 				<div id="disqus_thread"></div>
@@ -151,7 +157,7 @@ SET `column1_name` = 'value1',
 			</div>
 
 			<div class="article-detail__menu flex">
-				<a title="1강, SQL SELECT"
+				<a title="1강, SQL SELECT 🤣"
 					href="article_detail_1.html"
 					class="hover-underline ">&lt;
 					이전글</a>
