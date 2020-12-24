@@ -125,7 +125,14 @@ a {
 
 /* 로고 시작 */
 .logo {
-	font-size: 4rem;
+	width:250px;
+	height:200px;
+	background-image:url(img/logo/logo_transparent.png);
+	background-position:50% 37%;
+	background-size:auto 200%;
+	background-repeat:no-repeat;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
 .logo>span {
@@ -136,16 +143,12 @@ a {
 	color: red;
 }
 
-.logo--mini {
-	font-size: 2rem;
-}
 /* 로고 끝 */
 
 /* 로고바 시작 */
 .logo-bar {
 	background-color: black;
 	color: white;
-	height: 150px;
 }
 /* 로고바 끝 */
 
