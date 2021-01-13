@@ -51,7 +51,7 @@ CREATE TABLE `article` (
 
 LOCK TABLES `article` WRITE;
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
-INSERT INTO `article` VALUES (1,'2020-12-17 12:55:38','2021-01-06 13:53:20','1강, SQL SELECT 🤣','# SELECT 🤣\r\n- 데이터 조회 기능\r\n\r\n# SELECT 예시\r\n```sql\r\nSELECT `column_name`,\r\nFROM `table_name`\r\nWHERE `column_name` > 1 # 조건\r\n```',1,3,1,2,15),(2,'2020-12-18 09:25:55','2021-01-06 13:53:19','2강, SQL INSERT','# INSERT\r\n- 데이터 삽입 기능\r\n\r\n# INSERT 예시\r\n```sql\r\nINSERT INTO `table_name`\r\nSET `column1_name` = \'value1\',\r\n`column2_name` = \'value2\'\r\n```',1,3,1,1,10);
+INSERT INTO `article` VALUES (1,'2020-12-17 12:55:38','2021-01-13 11:05:06','1강, SQL SELECT 🤣','# SELECT 🤣\r\n- 데이터 조회 기능\r\n\r\n# SELECT 예시\r\n```sql\r\nSELECT `column_name`,\r\nFROM `table_name`\r\nWHERE `column_name` > 1 # 조건\r\n```\r\n\r\n# HTML 예시\r\n```html\r\n<script>\r\nvar a = 10;\r\n</script>\r\n```',1,3,1,2,17),(2,'2020-12-18 09:25:55','2021-01-13 11:05:05','2강, SQL INSERT','# INSERT\r\n- 데이터 삽입 기능\r\n\r\n# INSERT 예시\r\n```sql\r\nINSERT INTO `table_name`\r\nSET `column1_name` = \'value1\',\r\n`column2_name` = \'value2\'\r\n```',1,3,1,1,14);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,7 +97,7 @@ CREATE TABLE `ga4DataPagePath` (
   `hit` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `pagePath` (`pagePath`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -106,7 +106,7 @@ CREATE TABLE `ga4DataPagePath` (
 
 LOCK TABLES `ga4DataPagePath` WRITE;
 /*!40000 ALTER TABLE `ga4DataPagePath` DISABLE KEYS */;
-INSERT INTO `ga4DataPagePath` VALUES (41,'2021-01-06 13:53:23','2021-01-06 13:53:23','/',50),(42,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_list_it_1.html',26),(43,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html',11),(44,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_2.html',10),(45,'2021-01-06 13:53:23','2021-01-06 13:53:23','/?dummy=1203981208321093892038203',1),(46,'2021-01-06 13:53:23','2021-01-06 13:53:23','/?fbclid=IwAR0ZRhi_8WQRCWtFisz8DTb42G6_UV5Ivq-fooY-xjYjzY8mHLSWwWatqkY',1),(47,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html?dummy=1029381290389128',1),(48,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html?dummy=120938129038',1),(49,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html?dummy=120938129038wefewfe',1),(50,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html?dummy=1209381293129',1);
+INSERT INTO `ga4DataPagePath` VALUES (49,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html?dummy=120938129038wefewfe',1),(50,'2021-01-06 13:53:23','2021-01-06 13:53:23','/article_detail_1.html?dummy=1209381293129',1),(61,'2021-01-13 11:05:07','2021-01-13 11:05:07','/',63),(62,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_list_it_1.html',28),(63,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_detail_2.html',14),(64,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_detail_1.html',13),(65,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_search.html',5),(66,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_detail_3.html',2),(67,'2021-01-13 11:05:07','2021-01-13 11:05:07','/?dummy=1203981208321093892038203',1),(68,'2021-01-13 11:05:07','2021-01-13 11:05:07','/?fbclid=IwAR0ZRhi_8WQRCWtFisz8DTb42G6_UV5Ivq-fooY-xjYjzY8mHLSWwWatqkY',1),(69,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_detail_1.html?dummy=1029381290389128',1),(70,'2021-01-13 11:05:07','2021-01-13 11:05:07','/article_detail_1.html?dummy=120938129038',1);
 /*!40000 ALTER TABLE `ga4DataPagePath` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -147,4 +147,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-06 13:53:51
+-- Dump completed on 2021-01-13 11:07:04
