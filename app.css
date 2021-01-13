@@ -338,3 +338,9 @@ a {
 }
 
 /* 게시물 상세 끝 */
+
+/* vue 시작 */
+[v-cloak] {
+	display:none;
+}
+/* vue 끝 */
